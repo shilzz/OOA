@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OOA • Ops & Automations</title>
+  <meta name="description" content="OOA (Ops & Automations) - Modern operations and automation landing page" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#">
+        <span class="brand-logo-svg" aria-label="OOA - Ops & Automations logo">
+          <svg width="34" height="34" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+            <rect width="64" height="64" fill="#ffffff"/>
+            <path d="M12 20a20 20 0 0 1 40 0h-6.5a13.5 13.5 0 0 0-27 0H12Z" fill="#FF7A00"/>
+            <path d="M12 44a20 20 0 0 0 40 0h-6.5a13.5 13.5 0 0 1-27 0H12Z" fill="#FF7A00"/>
+            <path d="M52 20a20 20 0 0 0-40 0h6.5a13.5 13.5 0 0 1 27 0H52Z" fill="#0B1220"/>
+            <path d="M52 44a20 20 0 0 1-40 0h6.5a13.5 13.5 0 0 0 27 0H52Z" fill="#0B1220"/>
+            <g font-family="Inter, Arial, sans-serif" text-anchor="middle">
+              <text x="32" y="33" font-size="14" font-weight="700" fill="#0B1220">OOA</text>
+              <text x="32" y="40" font-size="5.2" letter-spacing=".12em" fill="#0B1220" opacity="0.8">OPS & AUTOMATIONS</text>
+            </g>
+          </svg>
+        </span>
+        <span class="brand-sub">Ops & Automations</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#use-cases">Use cases</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn-sm btn-outline" href="#demo">Request demo</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container grid two-col">
+        <div class="hero-copy">
+          <div class="badge">New • Automation templates</div>
+          <h1>Scale your operations with precision automation</h1>
+          <p class="lead">Design, orchestrate, and monitor workflows that power your business. Reduce toil, increase reliability, and move faster with Oryx.</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="#demo">Start free</a>
+            <a class="btn btn-ghost" href="#learn">Learn more</a>
+          </div>
+          <ul class="hero-points">
+            <li>Drag-and-drop workflow builder</li>
+            <li>Human-in-the-loop approvals</li>
+            <li>Observability & audit trails</li>
+          </ul>
+        </div>
+        <div class="hero-media">
+          <div class="card shadow-xl">
+            <div class="card-header">
+              <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+              <span class="card-title">Workflow: Onboarding</span>
+            </div>
+            <div class="card-body">
+              <img src="assets/hero-diagram.svg" alt="Workflow diagram" onerror="this.outerHTML='<div class=placeholder>Workflow preview</div>'" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <h2 class="section-title">Powerful features</h2>
+        <p class="section-sub">Everything you need to automate at scale.</p>
+        <div class="grid three-col cards">
+          <article class="feature-card">
+            <div class="icon" aria-hidden="true">⚙️</div>
+            <h3>Visual builder</h3>
+            <p>Compose workflows with conditions, loops, and retries. Ship automation without writing code.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon" aria-hidden="true">🔗</div>
+            <h3>Integrations</h3>
+            <p>Connect your stack via REST, webhooks, and 100+ prebuilt connectors.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon" aria-hidden="true">🛡️</div>
+            <h3>Governance</h3>
+            <p>RBAC, approvals, and audit logs to keep everything compliant and secure.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon" aria-hidden="true">📈</div>
+            <h3>Observability</h3>
+            <p>End-to-end traces and metrics to monitor SLAs and spot regressions.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon" aria-hidden="true">🤝</div>
+            <h3>Human steps</h3>
+            <p>Embed tasks, reviews, and sign-offs right into your automation.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon" aria-hidden="true">🧠</div>
+            <h3>AI assistance</h3>
+            <p>Generate automations from natural language and get smart suggestions.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="section alt">
+      <div class="container grid two-col">
+        <div>
+          <h2 class="section-title">How it works</h2>
+          <ol class="steps">
+            <li>
+              <h4>Model your process</h4>
+              <p>Lay out tasks, decisions, and data flows in minutes.</p>
+            </li>
+            <li>
+              <h4>Connect your tools</h4>
+              <p>Configure triggers and actions across your apps and services.</p>
+            </li>
+            <li>
+              <h4>Run and observe</h4>
+              <p>Track runs with real-time logs, traces, and alerts.</p>
+            </li>
+          </ol>
+        </div>
+        <div>
+          <div class="panel">
+            <div class="panel-row"><span class="chip">Trigger</span><span class="muted">New ticket in Helpdesk</span></div>
+            <div class="panel-row"><span class="chip chip-green">Action</span><span class="muted">Provision access</span></div>
+            <div class="panel-row"><span class="chip chip-blue">Approval</span><span class="muted">Manager review</span></div>
+            <div class="panel-row"><span class="chip chip-purple">Notify</span><span class="muted">Slack channel</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="use-cases" class="section">
+      <div class="container">
+        <h2 class="section-title">Popular use cases</h2>
+        <div class="grid three-col cards tight">
+          <article class="usecase">
+            <h3>Employee onboarding</h3>
+            <p>Accounts, devices, permissions—all set up automatically.</p>
+          </article>
+          <article class="usecase">
+            <h3>Customer onboarding</h3>
+            <p>Verify, provision, and welcome new customers at scale.</p>
+          </article>
+          <article class="usecase">
+            <h3>Incident response</h3>
+            <p>Automate diagnosis and remediation with human checkpoints.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-section alt" id="demo">
+      <div class="container center">
+        <h2>Ready to automate?</h2>
+        <p class="lead">Get started free or request a guided demo.
+        </p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#">Get started</a>
+          <a class="btn btn-outline" href="#">Request demo</a>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <header class="contact-header">
+            <h3>Send us a message</h3>
+            <p class="muted">Fill out the form below and we'll get back to you as soon as possible.</p>
+          </header>
+          <form id="contactForm" novalidate>
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="fullName">Full Name <span class="req">*</span></label>
+                <input type="text" id="fullName" name="fullName" placeholder="Your full name" required />
+                <div class="error" data-error-for="fullName"></div>
+              </div>
+              <div class="form-field">
+                <label for="email">Email Address <span class="req">*</span></label>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
+                <div class="error" data-error-for="email"></div>
+              </div>
+              <div class="form-field">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567" />
+              </div>
+              <div class="form-field">
+                <label for="service">Service of Interest <span class="req">*</span></label>
+                <select id="service" name="service" required>
+                  <option value="" selected>Select a service</option>
+                  <option>Workflow Automation</option>
+                  <option>Integrations</option>
+                  <option>Incident Response</option>
+                  <option>Onboarding</option>
+                  <option>Custom</option>
+                </select>
+                <div class="error" data-error-for="service"></div>
+              </div>
+              <div class="form-field form-span">
+                <label for="message">Message <span class="req">*</span></label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us about your project and requirements..." required></textarea>
+                <div class="error" data-error-for="message"></div>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary" id="sendBtn">
+                <span class="btn-text">Send Message</span>
+                <span aria-hidden>✈️</span>
+              </button>
+              <span class="form-status" id="formStatus" role="status" aria-live="polite"></span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand brand-footer">
+          <span class="brand-logo-svg" aria-label="OOA - Ops & Automations logo">
+            <svg width="30" height="30" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+              <rect width="64" height="64" fill="#ffffff"/>
+              <path d="M12 20a20 20 0 0 1 40 0h-6.5a13.5 13.5 0 0 0-27 0H12Z" fill="#FF7A00"/>
+              <path d="M12 44a20 20 0 0 0 40 0h-6.5a13.5 13.5 0 0 1-27 0H12Z" fill="#FF7A00"/>
+              <path d="M52 20a20 20 0 0 0-40 0h6.5a13.5 13.5 0 0 1 27 0H52Z" fill="#0B1220"/>
+              <path d="M52 44a20 20 0 0 1-40 0h6.5a13.5 13.5 0 0 0 27 0H52Z" fill="#0B1220"/>
+              <g font-family="Inter, Arial, sans-serif" text-anchor="middle">
+                <text x="32" y="33" font-size="14" font-weight="700" fill="#0B1220">OOA</text>
+                <text x="32" y="40" font-size="5.2" letter-spacing=".12em" fill="#0B1220" opacity="0.8">OPS & AUTOMATIONS</text>
+              </g>
+            </svg>
+          </span>
+          <span class="brand-sub">Ops & Automations</span>
+        </div>
+        <p class="muted small">© <span id="year"></span> OOA. All rights reserved.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#use-cases">Use cases</a>
+        <a href="#demo">Demo</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

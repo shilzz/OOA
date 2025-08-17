@@ -1,0 +1,19 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="OOA Ops & Automations">
+  <defs>
+    <style>
+      @font-face{font-family:'Inter Local';src:local('Inter');}
+    </style>
+  </defs>
+  <rect width="64" height="64" fill="#ffffff"/>
+  <!-- Orange arc -->
+  <path d="M12 20a20 20 0 0 1 40 0h-6.5a13.5 13.5 0 0 0-27 0H12Z" fill="#FF7A00"/>
+  <path d="M12 44a20 20 0 0 0 40 0h-6.5a13.5 13.5 0 0 1-27 0H12Z" fill="#FF7A00"/>
+  <!-- Navy arc -->
+  <path d="M52 20a20 20 0 0 0-40 0h6.5a13.5 13.5 0 0 1 27 0H52Z" fill="#0B1220"/>
+  <path d="M52 44a20 20 0 0 1-40 0h6.5a13.5 13.5 0 0 0 27 0H52Z" fill="#0B1220"/>
+  <!-- Text -->
+  <g font-family="Inter Local, Inter, Arial, sans-serif" text-anchor="middle">
+    <text x="32" y="33" font-size="14" font-weight="700" fill="#0B1220">OOA</text>
+    <text x="32" y="40" font-size="5.2" letter-spacing=".12em" fill="#0B1220" opacity="0.8">OPS & AUTOMATIONS</text>
+  </g>
+</svg>

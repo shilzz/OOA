@@ -1,0 +1,55 @@
+<svg width="800" height="360" viewBox="0 0 800 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F7FAFF"/>
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#020617" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="800" height="360" fill="url(#g)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="40" y="48" rx="12" width="280" height="84" fill="#ffffff" stroke="#E5E7EB"/>
+    <circle cx="68" cy="90" r="8" fill="#111827"/>
+    <text x="92" y="96" font-family="Inter, Arial" font-size="16" font-weight="700" fill="#111827">Trigger</text>
+    <text x="92" y="118" font-family="Inter, Arial" font-size="13" fill="#6B7280">New ticket in Helpdesk</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="320" y="48" rx="12" width="280" height="84" fill="#ffffff" stroke="#E5E7EB"/>
+    <circle cx="348" cy="90" r="8" fill="#16A34A"/>
+    <text x="372" y="96" font-family="Inter, Arial" font-size="16" font-weight="700" fill="#111827">Action</text>
+    <text x="372" y="118" font-family="Inter, Arial" font-size="13" fill="#6B7280">Provision access</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="160" y="168" rx="12" width="280" height="84" fill="#ffffff" stroke="#E5E7EB"/>
+    <circle cx="188" cy="210" r="8" fill="#2563EB"/>
+    <text x="212" y="216" font-family="Inter, Arial" font-size="16" font-weight="700" fill="#111827">Approval</text>
+    <text x="212" y="238" font-family="Inter, Arial" font-size="13" fill="#6B7280">Manager review</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="440" y="168" rx="12" width="280" height="84" fill="#ffffff" stroke="#E5E7EB"/>
+    <circle cx="468" cy="210" r="8" fill="#7C3AED"/>
+    <text x="492" y="216" font-family="Inter, Arial" font-size="16" font-weight="700" fill="#111827">Notify</text>
+    <text x="492" y="238" font-family="Inter, Arial" font-size="13" fill="#6B7280">Slack channel</text>
+  </g>
+
+  <g stroke="#CBD5E1" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M320 90 H 320"/>
+  </g>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#CBD5E1" />
+    </marker>
+  </defs>
+
+  <path d="M320 90 H 600" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M460 210 H 720" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M300 132 C 300 160, 300 160, 300 168" stroke="#94A3B8" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M520 132 C 520 160, 520 160, 520 168" stroke="#94A3B8" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+</svg>
