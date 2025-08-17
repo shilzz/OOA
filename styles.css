@@ -111,10 +111,10 @@ a{color:inherit;text-decoration:none}
 .shadow-xl{box-shadow:var(--shadow-lg)}
 
 /* Contact form */
-.contact-card{border:1px solid var(--border);border-radius:16px;background:#fff;box-shadow:var(--shadow-lg);padding:20px}
+.contact-card{border:1px solid var(--border);border-radius:16px;background:#fff;box-shadow:var(--shadow-lg);padding:24px}
 .contact-header h3{margin:0 0 6px;font-size:20px;color:var(--primary)}
-.contact-header .muted{margin:0 0 14px}
-.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.contact-header .muted{margin:0 0 16px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .form-field{display:flex;flex-direction:column;gap:6px}
 .form-span{grid-column:1 / -1}
 .form-field label{font-weight:700;font-size:14px;color:var(--primary)}
@@ -127,12 +127,17 @@ a{color:inherit;text-decoration:none}
   padding:10px 12px;
   font-family:inherit;font-size:14px;color:var(--primary);
   outline:none;
+  transition:border-color .2s ease, box-shadow .2s ease, background .2s ease;
 }
+.form-field input::placeholder,.form-field textarea::placeholder{color:#94a3b8}
+.form-field:focus-within label{color:var(--accent)}
+.form-field:focus-within input,.form-field:focus-within select,.form-field:focus-within textarea{border-color:color-mix(in oklab, var(--primary) 30%, var(--accent) 70%);box-shadow:0 0 0 3px #ff7a001a;background:#fff}
 .form-field input:focus,.form-field select:focus,.form-field textarea:focus{border-color:color-mix(in oklab, var(--primary) 30%, var(--accent) 70%);box-shadow:0 0 0 3px #ff7a001a}
 .error{color:#dc2626;font-size:12px;height:14px}
-.form-actions{display:flex;align-items:center;gap:12px;margin-top:10px}
+.form-actions{display:flex;flex-direction:column;align-items:stretch;gap:12px;margin-top:10px}
 .form-actions .btn{width:100%}
 .form-status{font-size:13px;color:var(--muted)}
 @media (max-width:800px){
   .form-grid{grid-template-columns:1fr}
+  /* layout already stacked; keep as-is */
 }
