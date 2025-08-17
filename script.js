@@ -30,7 +30,7 @@ if (yearEl) {
   const btnText = submitBtn?.querySelector('.btn-text');
 
   // TODO: Paste your Make.com webhook URL below
-  const MAKE_WEBHOOK_URL = 'https://hook.make.com/YOUR-WEBHOOK-ID';
+  const MAKE_WEBHOOK_URL = 'https://hook.eu2.make.com/8axf9gsi7bgbiiex9awsyrs8wmudyiv5';
 
   function setStatus(text, type = 'info'){
     if (!statusEl) return;
@@ -71,8 +71,8 @@ if (yearEl) {
     e.preventDefault();
     setStatus('');
     if (!validate()) { setStatus('Please fix the errors and try again.', 'error'); return; }
-    if (!MAKE_WEBHOOK_URL || MAKE_WEBHOOK_URL.includes('YOUR-WEBHOOK-ID')){
-      setStatus('Form wired. Add your Make.com Webhook URL in script.js to enable submissions.', 'error');
+    if (!MAKE_WEBHOOK_URL){
+      setStatus('Form not configured. Add your Make.com Webhook URL in script.js.', 'error');
       return;
     }
     try {
