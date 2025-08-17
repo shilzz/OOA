@@ -13,7 +13,7 @@ if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
 }
 
-// Contact form -> Power Automate
+// Contact form -> Make.com webhook
 (function(){
   const form = document.getElementById('contactForm');
   if (!form) return;
@@ -29,8 +29,8 @@ if (yearEl) {
   const submitBtn = document.getElementById('sendBtn');
   const btnText = submitBtn?.querySelector('.btn-text');
 
-  // TODO: Replace with your Power Automate HTTP trigger URL
-  const FLOW_URL = 'https://YOUR-POWER-AUTOMATE-HTTP-TRIGGER-URL';
+  // TODO: Paste your Make.com webhook URL below
+  const MAKE_WEBHOOK_URL = 'https://hook.make.com/YOUR-WEBHOOK-ID';
 
   function setStatus(text, type = 'info'){
     if (!statusEl) return;
@@ -71,13 +71,13 @@ if (yearEl) {
     e.preventDefault();
     setStatus('');
     if (!validate()) { setStatus('Please fix the errors and try again.', 'error'); return; }
-    if (!FLOW_URL || FLOW_URL.includes('YOUR-POWER-AUTOMATE-HTTP-TRIGGER-URL')){
-      setStatus('Form wired. Add your Power Automate URL in script.js to enable submissions.', 'error');
+    if (!MAKE_WEBHOOK_URL || MAKE_WEBHOOK_URL.includes('YOUR-WEBHOOK-ID')){
+      setStatus('Form wired. Add your Make.com Webhook URL in script.js to enable submissions.', 'error');
       return;
     }
     try {
       setLoading(true);
-      const res = await fetch(FLOW_URL, {
+      const res = await fetch(MAKE_WEBHOOK_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -94,7 +94,8 @@ if (yearEl) {
         throw new Error(`Request failed (${res.status})`);
       }
       form.reset();
-      setStatus('Thanks! Your message has been sent.', 'success');
+      // Redirect to thanks page (works for static hosting too)
+      window.location.href = 'thanks.html';
     } catch (err){
       setStatus('Unable to send right now. Please try again later.', 'error');
       console.error('Contact form error:', err);
